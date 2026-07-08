@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ESTADISTICAS</title>
+    <style>
+        #clubes{
+    width: 95%;
+    margin: 40px auto;
+}
+
+#clubes h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contenedor-clubes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.club{
+    width: 300px;
+    height: 400px;
+    background: #222;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    transition: .4s;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.club img{
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+.club h3{
+    margin: 15px 0;
+}
+
+.info{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .4s;
+    padding: 25px;
+    text-align: left;
+}
+
+.club:hover{
+    transform: scale(1.15);
+    background: #b40000;
+    z-index: 10;
+}
+
+.club:hover .info{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contenedor-clubes:hover .club:not(:hover){
+    transform: scale(.9);
+    opacity: .6;
+}
+    </style>
+</head>
+<body>
+
+
+  
+    <header>
+        <h1>ESTADÍSTICAS</h1>
+    </header>
+
+      <nav>
+       <nav class="navbar">
+    <a href="index.html" class="nav-item">Inicio</a>
+    <a href="BIOGRAFIA.HTML" class="nav-item">Biografia</a>
+    <a href="ESTADISTICAS.HTML" class="nav-item">Estadisticas</a>
+    <a href="MARCAS.HTML" class="nav-item">Marcas</a>
+    <a href="GALERIA.html" class="nav-item">Galeria</a>
+</nav>
+    </nav>
+   
+   
+<section id="clubes">
+
+    <h2>Trayectoria por Club</h2>
+
+    <div class="contenedor-clubes">
+
+        <div class="club">
+            <img src="eso.jpg" alt="Real Madrid">
+            <h3>Real Madrid</h3>
+
+            <div class="info">
+                <p><strong>Partidos:</strong> 438</p>
+                <p><strong>Goles:</strong> 450</p>
+                <p><strong>Asistencias:</strong> 131</p>
+                <p><strong>Títulos:</strong> 16</p>
+                <p><strong>Balones de Oro:</strong> 4</p>
+            </div>
+        </div>
+
+        <div class="club">
+            <img src="siuuu.jpg" alt="Manchester United">
+            <h3>Manchester United</h3>
+
+            <div class="info">
+                <p><strong>Partidos:</strong> 346</p>
+                <p><strong>Goles:</strong> 145</p>
+                <p><strong>Asistencias:</strong> 64</p>
+                <p><strong>Títulos:</strong> 10</p>
+            </div>
+        </div>
+
+        <div class="club">
+            <img src="juve.jpg" alt="Juventus">
+            <h3>Juventus</h3>
+
+            <div class="info">
+                <p><strong>Partidos:</strong> 134</p>
+                <p><strong>Goles:</strong> 101</p>
+                <p><strong>Asistencias:</strong> 22</p>
+                <p><strong>Títulos:</strong> 5</p>
+            </div>
+        </div>
+
+        <div class="club">
+            <img src="alnassr.jpg" alt="Al Nassr">
+            <h3>Al-Nassr</h3>
+
+            <div class="info">
+                <p><strong>Partidos:</strong> 145</p>
+                <p><strong>Goles:</strong> 127</p>
+                <p><strong>Asistencias:</strong> 25</p>
+                <p><strong>Títulos:</strong> 1</p>
+            </div>
+        </div>
+
+        <div class="club">
+            <img src="sporting.jpg" alt="Sporting">
+            <h3>Sporting CP</h3>
+
+            <div class="info">
+                <p><strong>Partidos:</strong> 31</p>
+                <p><strong>Goles:</strong> 5</p>
+                <p><strong>Asistencias:</strong> 6</p>
+                <p><strong>Títulos:</strong> 1</p>
+            </div>
+        </div>
+
+         <div class="club">
+            <img src="cccc.jpg" alt="Real Madrid">
+            <h3>Selección de portugal</h3>
+
+            <div class="info">
+                <p><strong>Partidos:</strong> 231</p>
+                <p><strong>Goles:</strong> 145</p>
+                <p><strong>Asistencias:</strong> 46</p>
+                <p><strong>Títulos:</strong> 32</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+   <footer>
+    <p>Esta página fue creada por <strong>José Balbuena</strong> y <strong>Tiziano Garozzo</strong>.</p>
+</footer>
+
+</body>
+</html>

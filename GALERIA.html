@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Galería de Cristiano Ronaldo</title>
+
+<style>
+
+.galeria{
+    width:95%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.foto{
+    background: #686666;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,.25);
+    transition:0.4s;
+}
+
+.foto:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.35);
+}
+
+.imagen{
+    width:100%;
+    height:250px;  
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: #686666;
+}
+
+.imagen img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    transition:transform .5s;
+}
+.imagen:hover img{
+    transform:scale(1.18); 
+}
+
+.contenido{
+    padding:18px;
+}
+
+.contenido h2{
+    margin-top:0;
+    color:red;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Galería Fotográfica de Cristiano Ronaldo</h1>
+    <p>Momentos destacados de la carrera del futbolista portugués.</p>
+</header>
+  <nav>
+       <nav class="navbar">
+    <a href="index.html" class="nav-item">Inicio</a>
+    <a href="BIOGRAFIA.HTML" class="nav-item">Biografia</a>
+    <a href="ESTADISTICAS.HTML" class="nav-item">Estadisticas</a>
+    <a href="MARCAS.HTML" class="nav-item">Marcas</a>
+    <a href="#" class="nav-item">Galeria</a>
+</nav>
+    </nav>
+<section class="galeria">
+
+    <div class="foto">
+        <img src="GALERIA1.jfif" alt="Cristiano Ronaldo Portugal">
+        <div class="contenido">
+            <h2>Portugal en Competencia Internacional</h2>
+            <p>
+                Cristiano Ronaldo vistiendo la camiseta de la selección de Portugal
+                durante un partido oficial. Esta fotografía representa su liderazgo
+                como capitán del equipo nacional.
+            </p>
+            <b>Lugar:</b> Partido internacional con la Selección de Portugal
+            (estadio no identificado).
+        </div>
+    </div>
+
+    <div class="foto">
+        <img src="GALERIA2.jfif" alt="Cristiano Portugal">
+        <div class="contenido">
+            <h2>Capitán de Portugal</h2>
+            <p>
+                Ronaldo con el uniforme blanco de Portugal y el brazalete de capitán,
+                demostrando su importancia dentro de la selección nacional.
+            </p>
+            <b>Lugar:</b> Encuentro oficial de la Selección de Portugal
+            (estadio no identificado).
+        </div>
+    </div>
+
+    <div class="foto">
+        <img src="GALERIA3.jfif" alt="Cristiano Real Madrid">
+        <div class="contenido">
+            <h2>Espectacular Chilena</h2>
+            <p>
+                Una de las jugadas más recordadas de Cristiano Ronaldo:
+                la chilena frente a la Juventus durante la UEFA Champions League.
+            </p>
+            <b>Lugar:</b> Allianz Stadium, Turín, Italia.
+        </div>
+    </div>
+
+    <div class="foto">
+        <img src="GALERIA4.jfif" alt="Cristiano CR7">
+        <div class="contenido">
+            <h2>Imagen Promocional CR7</h2>
+            <p>
+                Fotografía utilizada como imagen promocional de la marca CR7,
+                destacando a Cristiano durante su etapa en el Real Madrid.
+            </p>
+            <b>Lugar:</b> Imagen publicitaria (no corresponde a un estadio específico).
+        </div>
+    </div>
+
+    <div class="foto">
+        <img src="GALERIA5.jfif" alt="Cristiano celebración">
+        <div class="contenido">
+            <h2>Celebración con Portugal</h2>
+            <p>
+                Cristiano Ronaldo celebra un momento importante con la selección
+                portuguesa después de un encuentro internacional.
+            </p>
+            <b>Lugar:</b> Partido de la Selección de Portugal
+            (estadio no identificado).
+        </div>
+    </div>
+
+    <div class="foto">
+        <img src="GALERIA6.jfif" alt="Cristiano celebración">
+        <div class="contenido">
+            <h2>Celebración Icónica</h2>
+            <p>
+                Ronaldo muestra una de sus celebraciones más famosas tras anotar un gol,
+                demostrando su fuerza física y carácter competitivo.
+            </p>
+            <b>Lugar:</b> Partido oficial (estadio no identificado).
+        </div>
+    </div>
+
+    <div class="foto">
+        <img src="GALERIA7.jfif" alt="Cristiano Ronaldo">
+        <div class="contenido">
+            <h2>Figura del Fútbol Mundial</h2>
+            <p>
+                Imagen de Cristiano Ronaldo durante una celebración en el campo,
+                resaltando su condición física y su trayectoria como uno de los mejores
+                futbolistas de la historia.
+            </p>
+            <b>Lugar:</b> Campo de juego durante un partido oficial
+            (estadio no identificado).
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>Esta página fue creada por <strong>José Balbuena</strong> y <strong>Tiziano Garozzo</strong>.</p>
+</footer>
+
+</body>
+</html>
